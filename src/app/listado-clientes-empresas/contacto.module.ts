@@ -4,23 +4,22 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HistorialServiciosPageRoutingModule } from './historial-servicios-routing.module';
+import { ContactoPageRoutingModule } from './contacto-routing.module';
 
-import { HistorialServiciosPage } from './historial-servicios.page';
+import { ContactoPage } from './contacto.page';
 
 import { BottomMenuComponentModule } from '../elements/bottom-menu/bottom-menu.module';
 import { HeaderComponentModule  } from '../elements/header/header.module';
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HistorialServiciosPageRoutingModule,
+    ContactoPageRoutingModule,
     HeaderComponentModule,
     BottomMenuComponentModule
   ],
-  declarations: [HistorialServiciosPage]
+  declarations: [ContactoPage]
 })
-export class HistorialServiciosPageModule {}
+export class ContactoPageModule {}

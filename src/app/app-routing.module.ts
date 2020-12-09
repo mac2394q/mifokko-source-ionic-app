@@ -65,6 +65,10 @@ const routes: Routes = [
     loadChildren: () => import('./contacto/contacto.module').then( m => m.ContactoPageModule)
   },
   {
+    path: 'soporte',
+    loadChildren: () => import('./soporte/contacto.module').then( m => m.ContactoPageModule)
+  },
+  {
     path: 'ofertas',
     loadChildren: () => import('./ofertas/ofertas.module').then( m => m.OfertasPageModule)
   },
@@ -101,12 +105,24 @@ const routes: Routes = [
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
   {
+    path: 'listado-clientes',
+    loadChildren: () => import('./listado-clientes/contacto.module').then( m => m.ContactoPageModule)
+  },
+  {
+    path: 'listado-clientes-empresas',
+    loadChildren: () => import('./listado-clientes-empresas/contacto.module').then( m => m.ContactoPageModule)
+  },
+  {
     path: 'servicios-activos',
     loadChildren: () => import('./servicios-activos/servicios-activos.module').then( m => m.ServiciosActivosPageModule)
   },
   {
     path: 'historial-servicios',
     loadChildren: () => import('./historial-servicios/historial-servicios.module').then( m => m.HistorialServiciosPageModule)
+  },
+  {
+    path: 'servicios-detalle',
+    loadChildren: () => import('./servicios-detalle/historial-servicios.module').then( m => m.HistorialServiciosPageModule)
   },
   {
     path: 'crear-oferta',
