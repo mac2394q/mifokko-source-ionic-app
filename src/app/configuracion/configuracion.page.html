@@ -1,0 +1,165 @@
+
+<div class="appHeader">
+  <div class="left">
+      <a href="/landing" class="headerButton goBack">
+          <ion-icon name="chevron-back-outline" role="img" class="md hydrated" aria-label="chevron back outline"></ion-icon>
+      </a>
+  </div>
+  <div class="pageTitle">
+      Configuracion
+  </div>
+  <div class="right">
+      <a href="/notificacion" class="headerButton">
+          <ion-icon class="icon md hydrated" name="notifications-outline" role="img" aria-label="notifications outline"></ion-icon>
+          <span class="badge badge-danger">4</span>
+      </a>
+  </div>
+</div>
+<ion-content>
+  <div id="appCapsule">
+        
+    <div class="section mt-3 text-center">
+        <div class="avatar-section">
+            <a href="/perfil">
+                <img src="https://www.indiepasion.com/wp-content/uploads/2019/01/John-Doe.jpg" alt="avatar" class="imaged w100 rounded">
+                <span class="button">
+                    <ion-icon name="camera-outline" role="img" class="md hydrated" aria-label="camera outline"></ion-icon>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="listview-title mt-1">Notificationes</div>
+    <ul class="listview image-listview text inset">
+        <li>
+            <div class="item">
+                <div class="in">
+                    <div>
+                        Alertas de promociones y descuentos:
+                        <div class="text-muted">
+                            Enviar notificaciones cada vez que una empresa o profesional generar una nueva promocion o descuento.
+                        </div>
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch4" checked="">
+                        <label class="custom-control-label" for="customSwitch4"></label>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#" class="item">
+                <div class="in">
+                    <div>Sonido de notificacion:</div>
+                    <span class="text-primary">Beep</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <div class="listview-title mt-1">Configuracion de Perfil:</div>
+    <ul class="listview image-listview text inset">
+        <li>
+            <a href="/perfil" class="item">
+                <div class="in">
+                    <div>Actualizar datos</div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="listview-title mt-1">Modos de autenticacion:</div>
+    <ul class="listview image-listview text inset">
+        <li>
+            <a href="#" class="item">
+                <div class="in">
+                    <div>Google Account</div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="listview-title mt-1">Permisos del dispositivo</div>
+    <ul class="listview image-listview text mb-2 inset">
+        
+        <li>
+            <div class="item">
+                <div class="in">
+                    <div>
+                        Permitir uso del GPS
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
+                        <label class="custom-control-label" for="customSwitch3"></label>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="in">
+                    <div>
+                        Permitir uso de la camara
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
+                        <label class="custom-control-label" for="customSwitch3"></label>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="in">
+                    <div>
+                        Permitir uso de directorio de archivos temporales (Cache avanzado)
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
+                        <label class="custom-control-label" for="customSwitch3"></label>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="in">
+                    <div>
+                        Permitir recibir notificacion push (Proceso en segundo plano)
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
+                        <label class="custom-control-label" for="customSwitch3"></label>
+                    </div>
+                </div>
+            </div>
+        </li>
+      
+    </ul>
+    
+    <div class="listview-title mt-1">Securidad</div>
+    <ul class="listview image-listview text mb-2 inset">
+        <li>
+            <a href="/cambiar-clave" class="item">
+                <div class="in">
+                    <div>Actualizar Clave</div> 
+                </div>
+            </a>
+        </li>
+        
+        <li>
+            <a href="/datos-vehiculo" class="item">
+                <div class="in">
+                    <div>Cerrar sesion de todos los dispositivos</div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    
+
+</div>
+</ion-content>
+
+<app-bottom-menu></app-bottom-menu>

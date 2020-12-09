@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Mi fokko</title>
+
+  <base href="/" />
+
+  <meta name="color-scheme" content="light dark" />
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <link rel="icon" type="image/png" href="assets/icon/fav-03-74x75.png" />
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Web Fonts
+  ============================================= -->
+  <link rel='stylesheet' href='assets/lib/fonts/css.css' type='text/css'>
+  <!-- fontsawesome
+    ============================================= -->
+  <link rel="stylesheet" href="assets/lib/fontawesome/all.css">
+
+  <style>
+    tablet-font-x1 {
+      zoom: 120%;
+    }
+
+    .fondo__img {
+      background-image: url(../../assets/img/fondo3.jpg);
+      /* Fijar la imagen de fondo este vertical y
+    horizontalmente y centrado */
+      background-position: center center;
+
+      /* Esta imagen no debe de repetirse */
+      background-repeat: no-repeat;
+
+      /* COn esta regla fijamos la imagen en la pantalla. */
+      background-attachment: fixed;
+
+      /* La imagen ocupa el 100% y se reescala */
+      background-size: cover;
+
+      /* Damos un color de fondo mientras la imagen está cargando  */
+      background-color: #464646;
+    }
+
+    .fondo__app {
+      background-image: url(../../assets/img/fondo_blanco.png);
+      /* Fijar la imagen de fondo este vertical y
+    horizontalmente y centrado */
+      background-position: center center;
+
+      /* Esta imagen no debe de repetirse */
+      background-repeat: no-repeat;
+
+      /* COn esta regla fijamos la imagen en la pantalla. */
+      background-attachment: fixed;
+
+      /* La imagen ocupa el 100% y se reescala */
+      background-size: cover;
+
+      /* Damos un color de fondo mientras la imagen está cargando  */
+      background-color: #464646;
+    }
+
+    .fondo_independientes {
+      background-image: url(../../assets/img/diseno_app-20.jpg);
+      /* Fijar la imagen de fondo este vertical y
+    horizontalmente y centrado */
+      background-position: center center;
+
+      /* Esta imagen no debe de repetirse */
+      background-repeat: no-repeat;
+
+      /* COn esta regla fijamos la imagen en la pantalla. */
+      background-attachment: fixed;
+
+      /* La imagen ocupa el 100% y se reescala */
+      background-size: cover;
+
+      /* Damos un color de fondo mientras la imagen está cargando  */
+      background-color: #464646;
+    }
+
+
+    .fondo_resultados {
+      background-image: url(../../assets/img/fondo_resultados.jpg);
+      /* Fijar la imagen de fondo este vertical y
+    horizontalmente y centrado */
+      background-position: center center;
+
+      /* Esta imagen no debe de repetirse */
+      background-repeat: no-repeat;
+
+      /* COn esta regla fijamos la imagen en la pantalla. */
+      background-attachment: fixed;
+
+      /* La imagen ocupa el 100% y se reescala */
+      background-size: cover;
+
+      /* Damos un color de fondo mientras la imagen está cargando  */
+      background-color: #464646;
+    }
+
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 50%;
+      position: relative;
+      height: 0;
+    }
+
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+
+    .color-orange {
+      color: orange;
+
+    }
+
+    .imagen_landing {
+      height: auto;
+      width: 100px !important;
+    }
+
+    .boton-independiente {
+      
+      background-color: #FFF;
+    
+      background: rgba(255, 175, 75, 1);
+      background: -moz-linear-gradient(top, rgba(255, 175, 75, 1) 0%, rgba(255, 146, 10, 1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 175, 75, 1)), color-stop(100%, rgba(255, 146, 10, 1)));
+      background: -webkit-linear-gradient(top, rgba(255, 175, 75, 1) 0%, rgba(255, 146, 10, 1) 100%);
+      background: -o-linear-gradient(top, rgba(255, 175, 75, 1) 0%, rgba(255, 146, 10, 1) 100%);
+      background: -ms-linear-gradient(top, rgba(255, 175, 75, 1) 0%, rgba(255, 146, 10, 1) 100%);
+      background: linear-gradient(to bottom, rgba(255, 175, 75, 1) 0%, rgba(255, 146, 10, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=0);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="loader">
+    <img src="assets/img/diseno_app-24.png" alt="icon" class="loading-icon">
+  </div>
+  <app-root></app-root>
+
+  <!-- Jquery -->
+  <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap-->
+  <script src="assets/js/lib/popper.min.js"></script>
+  <script src="assets/js/lib/bootstrap.min.js"></script>
+  <!-- Ionicons -->
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <!-- Owl Carousel -->
+  <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+  <!-- Base Js File -->
+  <script src="assets/js/base.js"></script>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory">
+  </script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal',
+
+        },
+
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              "description": "Cuenta Premium",
+              "amount": {
+                "currency_code": "USD",
+                "value": 10
+              }
+            }]
+          });
+        },
+
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function (err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+
+
+</body>
+
+</html>
