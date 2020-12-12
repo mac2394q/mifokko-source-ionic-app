@@ -77,10 +77,12 @@
             <h5 class="card-title"> <strong>Alcance</strong></h5>
             <p class="card-text text-justify btn-text-warning">tulua <br> Buga <br> palmira <br> cali <br> servicios a domicilio</p>
             <strong>Calificacion: </strong>
-            <li class="fa fa-star"></li>
-            <li class="fa fa-star"></li>
-            <li class="fa fa-star"></li>
-            <li class="fa fa-star"></li>
+            <span class="btn-text-warning">
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+            </span>
             <h5 class="card-title"> <strong>Informacion adicional</strong></h5>
             <p class="card-text text-justify">Soy ingeniero veterinaria <br></p>
           </div>
@@ -117,6 +119,14 @@
     
                 </div>
               </div>
+
+              <div class="card-body ">
+                <a href="#" data-toggle="modal" data-target="#actionSheetContent" data-backdrop="false" class="text-dark">
+                  <!-- ¿QUIERES MAS INFORMACION ? <br> TE LLAMAMOS GRATIS <li class="fab fa-whatsapp fa-2x"></li> -->
+                  <img src="../../assets/img/llamar gratis-44.png" class="imaged">
+                </a>
+  
+              </div>
           </div>
         </div>
       </div>
@@ -134,9 +144,12 @@
                         <h4 class="title">Usuario 24532</h4>
                         <div class="text text-justify">esto es un comentarios de prueba</div>
                         <div class="text text-justify"><strong>Calificacion: </strong>
-                          <li class="fa fa-star"></li>
-                          <li class="fa fa-star"></li>
-                          <li class="fa fa-star"></li>
+                          <span class="btn-text-warning">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                          </span>
                           </div>
                     </div>
                 </div>
@@ -147,8 +160,12 @@
                         <h4 class="title">Usuario 63434</h4>
                         <div class="text text-justify">registro nacido vivo, registro civil, historial clinico.</div>
                         <div class="text text-justify"><strong>Calificacion: </strong>
-                          <li class="fa fa-star"></li>
-                          <li class="fa fa-star"></li>
+                          <span class="btn-text-warning">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                          </span>
                           </div>
                     </div>
                 </div>
@@ -158,10 +175,12 @@
                         <h4 class="title">Usuario 242434</h4>
                         <div class="text text-justify">una prubea con un texto un poco mas grande con text-aling justifie</div>
                         <div class="text text-justify"><strong>Calificacion: </strong>
-                          <li class="fa fa-star"></li>
-                          <li class="fa fa-star"></li>
-                          <li class="fa fa-star"></li>
-                          <li class="fa fa-star"></li>
+                          <span class="btn-text-warning">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                          </span>
                           </div>
                     </div>
                 </div>
@@ -173,6 +192,67 @@
     </div>
 
   </div>
+  </div>
+
+  
+  <div class="modal fade action-sheet" id="actionSheetContent" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="fab fa-whatsapp fa-2x"></i>&nbsp;Enviar mensaje via WhatsApp</h5>
+        </div>
+        <div class="modal-body">
+          <div class="action-sheet-content">
+            <p>Puedes enviarnos directamente mensajes a nuestra linea de atencion al cliente via whatsapp..</p>
+            <div class="">
+              <form>
+                <div class="form-group basic">
+                  <div class="input-wrapper">
+                    <label class="label" for="userid3">
+                      <li class="fa fa-user fa-2x"></li>&nbsp;Tu nombre
+                    </label>
+                    <input type="text" class="form-control" id="userid3" placeholder="Mi Nombre es . . .">
+                    <i class="clear-input">
+                      <ion-icon name="close-circle" role="img" class="md hydrated" aria-label="close circle"></ion-icon>
+                    </i>
+                  </div>
+
+                </div>
+
+                <div class="form-group basic">
+                  <div class="input-wrapper">
+                    <label class="label" for="amount3"><i class="fas fa-envelope fa-2x"></i>&nbsp;Mensaje</label>
+                    <input type="text" class="form-control" id="amount3" placeholder="Cuerpo del mensaje . . .">
+                    <i class="clear-input">
+                      <ion-icon name="close-circle" role="img" class="md hydrated" aria-label="close circle"></ion-icon>
+                    </i>
+                  </div>
+
+                </div>
+                <div class="mt-2">
+                  <button type="button" (click)="enviarMensajeWp()" class="btn  btn-dark rounded shadowed btn-block">
+                    <i class="fab fa-whatsapp fa-2x"></i>&nbsp;Enviar
+                  </button>
+                  <button type="button" data-dismiss="modal" data-backdrop="false"
+                    class="btn  btn-dark rounded shadowed btn-block">
+                    <i class="fas fa-times"></i>&nbsp;Cerrar
+                  </button>
+                </div>
+                <div class="mt-2">
+                  <button type="button" data-dismiss="modal" data-backdrop="false"
+                    class="btn  btn-dark rounded shadowed btn-block">
+                    <i class="fas fa-times"></i>&nbsp;Cerrar
+                  </button>
+                </div>
+              </form>
+
+              <!-- <a href="#" class="btn btn-dark  btn-lg btn-block" data-dismiss="modal" data-backdrop="false"><i
+                  class="fas fa-times"></i>&nbsp;Cerrar</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </ion-content>
 <app-bottom-menu></app-bottom-menu>
